@@ -1,0 +1,72 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartas de Clash Royale</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>⚔️ Cartas de Clash Royale ⚔️</h1>
+    <p>Explora tus cartas favoritas y sus habilidades</p>
+  </header>
+
+  <main>
+    <div class="cartas-container">
+
+      <!-- Carta 1 -->
+      <div class="carta rara">
+        <img src="clash/1.jpg" alt="Gigante">
+        <h2>Gigante</h2>
+        <p><b>Rareza:</b> Rara</p>
+        <p><b>Elixir:</b> 5</p>
+        <p>Un tanque enorme que va directo a las torres.</p>
+      </div>
+
+      <!-- Carta 2 -->
+      <div class="carta comun">
+        <img src="clash/2.jpg" alt="Caballero">
+        <h2>Caballero</h2>
+        <p><b>Rareza:</b> Común</p>
+        <p><b>Elixir:</b> 3</p>
+        <p>Resistente y valiente, lucha cuerpo a cuerpo.</p>
+      </div>
+
+      <!-- Carta 3 -->
+      <div class="carta epica">
+        <img src="clash/3.jpg" alt="Caballero Oscuro">
+        <h2>Caballero Oscuro</h2>
+        <p><b>Rareza:</b> Épica</p>
+        <p><b>Elixir:</b> 4</p>
+        <p>Ataca con fuerza y su escudo lo protege del daño inicial.</p>
+      </div>
+
+      <!-- Carta 4 -->
+      <div class="carta epica">
+        <img src="clash/4.jpg" alt="Príncipe">
+        <h2>Príncipe</h2>
+        <p><b>Rareza:</b> Épica</p>
+        <p><b>Elixir:</b> 5</p>
+        <p>Su carga destruye casi todo lo que toca.</p>
+      </div>
+
+      <!-- Carta 5 -->
+      <div class="carta legendaria">
+        <img src="clash/images.jpg" alt="Princesa">
+        <h2>Princesa</h2>
+        <p><b>Rareza:</b> Legendaria</p>
+        <p><b>Elixir:</b> 3</p>
+        <p>Ataca a larga distancia con un arco incendiario.</p>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

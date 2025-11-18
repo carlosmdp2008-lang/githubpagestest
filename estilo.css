@@ -1,0 +1,158 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: url('clash/fondop.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 25px 10px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+  border-bottom: 2px solid #ffd700;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2.4em;
+  margin: 0;
+  color: #ffd700;
+  text-shadow: 0 0 15px #ffea00, 0 0 30px #ffaa00;
+}
+
+header p {
+  font-size: 1em;
+  color: #eee;
+  margin-top: 8px;
+}
+
+
+main {
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.cartas-container {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+
+.carta {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #ffd700;
+  border-radius: 15px;
+  width: 220px;
+  text-align: center;
+  padding: 20px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.carta:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+
+.carta img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+
+.carta h2 {
+  margin: 5px 0;
+  color: #ffea00;
+  font-size: 1.4em;
+}
+
+.carta p {
+  margin: 4px 0;
+  font-size: 0.9em;
+}
+
+
+
+
+.carta.comun:hover {
+  border-color: #00aaff;
+  background: rgba(0, 170, 255, 0.15);
+  animation: brilloComun 2s infinite linear;
+  box-shadow: 0 0 30px #00ffff, 0 0 60px #00aaff;
+}
+
+
+.carta.rara:hover {
+  border-color: #ffd700;
+  background: rgba(255, 215, 0, 0.15);
+  animation: brilloRara 2s infinite linear;
+  box-shadow: 0 0 30px #ffea00, 0 0 60px #ffaa00;
+}
+
+
+.carta.epica:hover {
+  border-color: #a020f0;
+  background: rgba(160, 32, 240, 0.15);
+  animation: brilloEpica 2s infinite linear;
+  box-shadow: 0 0 30px #ff00ff, 0 0 60px #a020f0;
+}
+
+
+.carta.legendaria:hover {
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #ffff00);
+  background-clip: padding-box;
+  animation: brilloLegendaria 2s infinite linear;
+  box-shadow: 0 0 40px #fff, 0 0 70px #ff00ff;
+}
+
+
+@keyframes brilloComun {
+  0% { box-shadow: 0 0 25px #00ffff, 0 0 50px #00aaff; }
+  50% { box-shadow: 0 0 50px #00aaff, 0 0 80px #00ffff; }
+  100% { box-shadow: 0 0 25px #00ffff, 0 0 50px #00aaff; }
+}
+
+@keyframes brilloRara {
+  0% { box-shadow: 0 0 25px #ffaa00, 0 0 50px #ffea00; }
+  50% { box-shadow: 0 0 50px #ffd700, 0 0 80px #ffaa00; }
+  100% { box-shadow: 0 0 25px #ffaa00, 0 0 50px #ffea00; }
+}
+
+@keyframes brilloEpica {
+  0% { box-shadow: 0 0 25px #ff00ff, 0 0 50px #a020f0; }
+  50% { box-shadow: 0 0 50px #a020f0, 0 0 80px #ff00ff; }
+  100% { box-shadow: 0 0 25px #ff00ff, 0 0 50px #a020f0; }
+}
+
+@keyframes brilloLegendaria {
+  0% { box-shadow: 0 0 30px #00ffff, 0 0 60px #ff00ff; }
+  50% { box-shadow: 0 0 60px #ffff00, 0 0 90px #00ffff; }
+  100% { box-shadow: 0 0 30px #00ffff, 0 0 60px #ff00ff; }
+}
+
+
