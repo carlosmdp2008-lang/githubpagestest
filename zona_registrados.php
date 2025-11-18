@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -69,4 +66,5 @@ session_start();
   </main>
 
 </body>
+
 </html>
